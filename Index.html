@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LFE (Sylhet FIVDB) - Group 12</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #eef2f5;
+      color: #333;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+    }
+
+    header p {
+      margin: 5px 0 0 0;
+      font-size: 1.2em;
+      font-weight: 400;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2em;
+      margin: 50px 0 30px 0;
+      color: #2c3e50;
+    }
+
+    .faculty-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto 60px auto;
+      padding: 0 20px;
+    }
+
+    .faculty-card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .faculty-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .faculty-card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #2c3e50;
+    }
+
+    .faculty-card h3 {
+      margin: 0;
+      font-size: 1.1em;
+      color: #2c3e50;
+    }
+
+    .students-container {
+      max-width: 600px;
+      margin: 0 auto 60px auto;
+      padding: 0 20px;
+    }
+
+    .student-card {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background: white;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .student-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    }
+
+    .student-card span:first-child {
+      font-weight: 500;
+      color: #2c3e50;
+    }
+
+    .student-card span:last-child {
+      font-weight: 400;
+      color: #555;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>LFE (Sylhet FIVDB)</h1>
+    <p>LFE Final Report - Group 12</p>
+  </header>
+
+  <section>
+    <h2 class="section-title">Our Faculty</h2>
+    <div class="faculty-container">
+      <div class="faculty-card">
+        <img src="khanasad.jpg" alt="Khan Mohammad Bin Asad">
+        <h3>Khan Mohammad Bin Asad</h3>
+      </div>
+      <div class="faculty-card">
+        <img src="ahadSir.jpg" alt="Ahad Chowdhury">
+        <h3>Ahad Chowdhury</h3>
+      </div>
+      <div class="faculty-card">
+        <img src="Mam1.jpg" alt="Rafia Rokaiya Hossain">
+        <h3>Rafia Rokaiya Hossain</h3>
+      </div>
+      <div class="faculty-card">
+        <img src="Mam2.jpg" alt="Aforza Sultana">
+        <h3>Aforza Sultana</h3>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Students List</h2>
+    <div class="students-container">
+      <div class="student-card">
+        <span>Labiba Rahman</span>
+        <span>ID: 2211574</span>
+      </div>
+      <div class="student-card">
+        <span>Mysha Akter Monami</span>
+        <span>ID: 2221682</span>
+      </div>
+      <div class="student-card">
+        <span>Md Rahmatullah</span>
+        <span>ID: 2230577</span>
+      </div>
+      <div class="student-card">
+        <span>M.M Sajjatul Islam</span>
+        <span>ID: 2222208</span>
+      </div>
+      <div class="student-card">
+        <span>Mizra Munir</span>
+        <span>ID: 2230430</span>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
