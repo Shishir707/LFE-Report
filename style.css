@@ -1,104 +1,192 @@
+/* General Body */
 body {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      background-color: #eef2f5;
-      color: #333;
-    }
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #eef2f5;
+  color: #333;
+}
 
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 50px 20px;
-      text-align: center;
-    }
+/* Header */
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 2.8em;
-    }
+/* Logo + University Name in One Row */
+.logo-university {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
 
-    header p {
-      margin: 5px 0 0 0;
-      font-size: 1.2em;
-      font-weight: 400;
-    }
+.logo {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid white;
+  background-color: rgb(218, 22, 22);
+}
 
-    .section-title {
-      text-align: center;
-      font-size: 2em;
-      margin: 50px 0 30px 0;
-      color: #3271b1;
+.university-name {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 700;
+}
 
-      
-    }
+/* Project Title */
+.project-title {
+  margin: 10px 0 5px 0;
+  font-size: 1.5em;
+  color: antiquewhite;
+}
 
-    .faculty-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 40px;
-      max-width: 1000px;
-      margin: 0 auto 60px auto;
-      padding: 0 20px;
-    }
+.project-subtitle {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 400;
+}
 
-    .faculty-card {
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 2em;
+  margin: 50px 0 30px 0;
+  color: #2c3e50;
+}
 
-    .faculty-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-    }
+/* Faculty Cards */
+.faculty-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+}
 
-    .faculty-card img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 15px;
-      border: 3px solid #2c3e50;
-    }
+.faculty-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
 
-    .faculty-card h3 {
-      margin: 0;
-      font-size: 1.1em;
-      color: #2c3e50;
-    }
+.faculty-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgb(0, 0, 0);
+}
 
-    .students-container {
-      max-width: 600px;
-      margin: 0 auto 60px auto;
-      padding: 0 20px;
-    }
+.faculty-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #087df1;
+}
 
-    .student-card {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 20px;
-      background: white;
-      border-radius: 10px;
-      margin-bottom: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
+.faculty-card img:hover {
+  border-color: #f00505;
+}
 
-    .student-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
-    }
+.faculty-card h3 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #2c3e50;
+}
 
-    .student-card span:first-child {
-      font-weight: 500;
-      color: #2c3e50;
-    }
+/* Students Cards */
+.students-container {
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+}
 
-    .student-card span:last-child {
-      font-weight: 400;
-      color: #555;
-    }
+.student-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,1);
+}
+
+.student-card span:first-child {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.student-card span:last-child {
+  font-weight: 400;
+  color: #555;
+}
+
+/* Responsive for Small Devices */
+@media(max-width: 768px) {
+  .faculty-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+  }
+
+  .faculty-card img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .university-name {
+    font-size: 1.5em;
+  }
+
+  .project-title {
+    font-size: 1.3em;
+  }
+
+  .project-subtitle {
+    font-size: 0.95em;
+  }
+}
+
+@media(max-width: 480px) {
+  .logo-university {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .faculty-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .faculty-card img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .students-container {
+    width: 90%;
+  }
+
+  .project-title {
+    font-size: 1.1em;
+  }
+
+  .project-subtitle {
+    font-size: 0.9em;
+  }
+}
