@@ -4,6 +4,7 @@ body {
   margin: 0;
   background-color: #eef2f5;
   color: #333;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Header */
@@ -77,9 +78,11 @@ header {
   text-align: center;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 12px 25px rgb(132, 132, 238);
 }
 
 .faculty-card:hover {
+  background-color: #f5c8c8;
   transform: translateY(-3px);
   box-shadow: 0 12px 25px rgb(0, 0, 0);
 }
@@ -120,11 +123,12 @@ header {
   margin-bottom: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
   transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 18px rgb(13, 13, 14);
 }
 
 .student-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 18px rgba(0,0,0,1);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 18px rgb(245, 2, 2);
 }
 
 .student-card span:first-child {
@@ -137,8 +141,23 @@ header {
   color: #555;
 }
 
-/* Responsive for Small Devices */
-@media(max-width: 768px) {
+/* Report (Google Doc) Embed Section */
+.report-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.report-container iframe {
+  width: 100%;
+  max-width: 1000px;
+  height: 1000px;
+  border: none;
+}
+
+/* Responsive for Tablets */
+@media (max-width: 768px) {
   .faculty-container {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 20px;
@@ -160,9 +179,14 @@ header {
   .project-subtitle {
     font-size: 0.95em;
   }
+
+  .report-container iframe {
+    height: 700px;
+  }
 }
 
-@media(max-width: 480px) {
+/* Responsive for Mobile */
+@media (max-width: 480px) {
   .logo-university {
     flex-direction: column;
     gap: 10px;
@@ -189,18 +213,8 @@ header {
   .project-subtitle {
     font-size: 0.9em;
   }
-}
 
-report-container {
-  display: flex;
-  justify-content: center; /* center horizontally */
-  padding: 2px;
+  .report-container iframe {
+    height: 600px;
+  }
 }
-
-.report-container iframe {
-  width: 100vw; /* 80% of the viewport width */
-  max-width: 1000px; /* cap width so it doesn’t get too big */
-  height: 100px;
-  border: none;
-}
-.
