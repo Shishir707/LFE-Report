@@ -191,23 +191,16 @@ header {
   }
 }
 
-.report-container {
+report-container {
   display: flex;
-  justify-content: center;
-  padding: 20px;
-  overflow-x: hidden; /* prevent horizontal scrolling */
+  justify-content: center; /* center horizontally */
+  padding: 2px;
 }
 
 .report-container iframe {
-  width: 100%;
-  max-width: 1000px;
-  height: 800px;
+  width: 100vw; /* 80% of the viewport width */
+  max-width: 1000px; /* cap width so it doesn’t get too big */
+  height: 100px;
   border: none;
-  overflow-x: hidden;  /* also prevent horizontal scroll in iframe */
 }
-
-.iframe-wrapper {
-  width: 100%;
-  max-width: 1000px;
-  overflow-x: hidden;
-}
+.
