@@ -190,3 +190,16 @@ header {
     font-size: 0.9em;
   }
 }
+
+.report-container {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  padding: 2px;
+}
+
+.report-container iframe {
+  width: 100vw; /* 80% of the viewport width */
+  max-width: 1000px; /* cap width so it doesn’t get too big */
+  height: 1000px;
+  border: none;
+}
